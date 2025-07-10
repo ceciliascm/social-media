@@ -2,28 +2,30 @@
 
   <section class="main-section">
 
-      <div class="image-section">
-        <img src="/svg/img-login.png" width="300px">
-      </div>
+      <section class="image-section">
+        <img src="/svg/img-login.png" width="600px">
+      </section>
 
-      <div class="forms-section">
-        <h2>LOGIN</h2>
-        <div>
-          <div>
-            <button></button>
-            <h2>Remember me</h2>
+      <section class="forms-section">
+        <h1>{{title}}</h1>
+        <ng-content></ng-content>
+        <div class="section-1">
+          <div class="remember-me-section">
+            <mat-slide-toggle color="primary">Remember me</mat-slide-toggle>
           </div>
           <h2>Forgot Password?</h2>
         </div>
-        <button></button>
-        <h2>OR</h2>
-        <h2>Login with</h2>
-        <div>
-          <img>
-          <img>
-          <img>
+        <div class="button-wrapper">
+          <button>{{primaryBtnText}}</button>
+          <h1>OR</h1>
+          <h2>Login with</h2>
+          <div class="social-media-section">
+            <img src="/svg/google_icon.png"   width="30px">
+            <img src="/svg/apple_icon.png"    width="30px">
+            <img src="/svg/facebook_icon.png" width="30px">
+          </div>
+          <h2>Don’t have an account? <a href="https://www.google.com/" target='_blank'>Register now</a></h2>
         </div>
-        <h2>Don’t have an account? Register now</h2>
-      </div>
+      </section>
   </section>
 </main>

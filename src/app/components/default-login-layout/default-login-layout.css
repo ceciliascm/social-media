@@ -13,10 +13,11 @@ main {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    width: 1150px;
+    width: 1100px;
     height: 600px;
     background-color: white;
     border-radius: 20px;
+    box-shadow: rgba(78, 77, 77, 0.40) 0 3px 3px;
   }
 
   .image-section {
@@ -41,7 +42,7 @@ main {
 
   .forms-section {
     display: grid;
-    flex-grow: 0.3;
+    flex-grow: 0.6;
     padding: 20px 30px 20px 20px;
     justify-items: center;
     gap: 20px;
@@ -49,9 +50,7 @@ main {
 
     h1 {
       font-size: 28px;
-      font-weight: bold;
-      font-family: 'SF Pro Rounded', sans-serif;
-      padding: 20px 20px 5px 20px;
+      padding: 30px 30px 20px 20px;
     }
 
     .section-1 {
@@ -72,9 +71,7 @@ main {
 
 
     h2 {
-      font-size: 13px;
-      font-weight: bold;
-      font-family: 'SF Pro Rounded', sans-serif;
+      font-size: 15px;
       color: #4E4D4D;
     }
 
@@ -94,6 +91,7 @@ main {
 
 
       button {
+        letter-spacing: 3px;
         border-radius: 15px;
         font-size: 16px;
         font-weight: 500;

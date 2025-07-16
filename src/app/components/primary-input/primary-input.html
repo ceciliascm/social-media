@@ -1,0 +1,15 @@
+<div class="input-wrapper">
+  <div class="input-content">
+    <div class="icon">
+      <ng-content></ng-content>
+    </div>
+    <input
+      [type]="type"
+      [placeholder] = "placeholder"
+      [value]="value"
+      (input)="onInput($event)"
+
+    />
+  </div>
+</div>
+

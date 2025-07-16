@@ -7,34 +7,17 @@
   --mdc-switch-unselected-track-color: #e0e0e0;
 }
 
-/*@font-face {
-  font-family: 'SF Pro Display';
-  src: url('/assets/fonts/sf-pro/SF-Pro-Rounded-Bold.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'SF Pro Display';
-  src: url('/assets/fonts/sf-pro/SF-Pro-Rounded-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-}*/
-
-.some-element {
-  font-family: 'SFProRounded', sans-serif; /*  'SFProRounded' is the font name you defined */
-}
-
 html, body {
-  font-family: 'SF Pro Display', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

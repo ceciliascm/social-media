@@ -1,28 +1,40 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 /* You can add global styles to this file, and also import other style files */
-/*@use '@angular/material' as mat;
+.mat-mdc-slide-toggle.mdc-switch {
+  --mdc-switch-selected-handle-color: #ff0000;
+  --mdc-switch-selected-track-color: #ffccbc;
+  --mdc-switch-unselected-handle-color: #9e9e9e;
+  --mdc-switch-unselected-track-color: #e0e0e0;
+}
 
-@include mat.core();
+/*@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/assets/fonts/sf-pro/SF-Pro-Rounded-Bold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
 
-$primary: mat.define-palette(mat.$indigo-palette);
-$accent: mat.define-palette(mat.$pink-palette);
-$warn: mat.define-palette(mat.$red-palette);
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/assets/fonts/sf-pro/SF-Pro-Rounded-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}*/
 
-$my-theme: mat.define-light-theme((
-  color: (
-    primary: $primary,
-    accent: $accent,
-    warn: $warn,
-  )
-));
-
-@include mat.all-component-themes($my-theme);*/
+.some-element {
+  font-family: 'SFProRounded', sans-serif; /*  'SFProRounded' is the font name you defined */
+}
 
 html, body {
+  font-family: 'SF Pro Display', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

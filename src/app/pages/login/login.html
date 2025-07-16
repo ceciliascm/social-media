@@ -2,7 +2,23 @@
     title="LOGIN"
     primaryBtnText="LOGIN"
 >
-  <form>
+  <form [formGroup]="loginForm">
+      <app-primary-input
+        formControlName="email"
+        inputName="email"
+        type="email"
+        placeholder="Email"
+      >
+        <img src="/png/message_icon.png">
+      </app-primary-input>
+      <app-primary-input
+        formControlName="email"
+        inputName="password"
+        type="password"
+        placeholder="Password"
+      >
+        <img src="/png/password_icon.png">
 
+      </app-primary-input>
   </form>
 </app-default-login-layout>

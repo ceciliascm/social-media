@@ -1,6 +1,8 @@
 <app-default-login-layout
     title="Login"
     primaryBtnText="LOGIN"
+    (submit) = "submit()"
+    [disablePrimaryBtn]="!loginForm.valid"
 >
   <form [formGroup]="loginForm">
       <app-primary-input
@@ -9,15 +11,15 @@
         type="email"
         placeholder="Email"
       >
-        <img src="/png/message_icon.png" style="width: 30px;">
+        <img src="/assets/png/message_icon.png" style="width: 30px;">
       </app-primary-input>
       <app-primary-input
-        formControlName="email"
+        formControlName="password"
         inputName="password"
         type="password"
         placeholder="Password"
       >
-        <img src="/png/password_icon.png" style="width: 30px;">
+        <img src="/assets/png/password_icon.png" style="width: 30px;">
 
       </app-primary-input>
   </form>

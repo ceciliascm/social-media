@@ -3,7 +3,7 @@
   <section class="main-section">
 
       <section class="image-section">
-        <img src="/png/img-login.png" width="600px">
+        <img src="/assets/png/img-login.png" width="600px">
       </section>
 
       <section class="forms-section">
@@ -16,15 +16,19 @@
           <h2>Forgot Password?</h2>
         </div>
         <div class="button-wrapper">
-          <button>{{primaryBtnText}}</button>
+          <button
+            (click)="submit()"
+            [disabled]="disablePrimaryBtn"
+          >
+            {{primaryBtnText}}</button>
           <h2>OR</h2>
           <h2>Login with</h2>
           <div class="social-media-section">
-            <img src="/png/google_icon.png" width="20px">
-            <img src="/png/apple_icon.png" width="20px">
-            <img src="/png/facebook_icon.png" width="20px">
+            <a href="https://www.google.com/?hl=pt_BR" target='_blank'><img src="/assets/png/google_icon.png" width="20px"></a>
+            <a href="https://www.apple.com/br/store" target='_blank'><img src="/assets/png/apple_icon.png" width="20px"></a>
+            <a href="https://www.facebook.com/?locale=pt_BR" target='_blank'><img src="/assets/png/facebook_icon.png" width="20px"></a>
           </div>
-          <h2>Don’t have an account? <a href="https://www.google.com/" target='_blank'>Register now</a></h2>
+          <h2>Don’t have an account? <a href="" target='_blank'>Register now</a></h2>
         </div>
       </section>
   </section>

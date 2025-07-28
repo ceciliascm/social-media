@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {MatSlideToggle, MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
@@ -13,5 +13,16 @@ import {MatSlideToggle, MatSlideToggleModule} from '@angular/material/slide-togg
 export class DefaultLoginLayout {
     @Input() title: string = "";
     @Input() primaryBtnText: string = "";
+    @Input() disablePrimaryBtn: boolean = true;
+    @Output("submit") onSubmit = new EventEmitter();
+    //@Output("navigate ") onSubmit = new EventEmitter();
+
+    submit() {
+      this.onSubmit.emit();
+    }
+
+ /* navigate() {
+    this.onNavigate.emit();
+  } */
 }
 

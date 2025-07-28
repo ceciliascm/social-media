@@ -1,4 +1,5 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'ngx-toastr/toastr';
 /* You can add global styles to this file, and also import other style files */
 .mat-mdc-slide-toggle.mdc-switch {
   --mdc-switch-selected-handle-color: #ff0000;

@@ -1,15 +1,23 @@
-<div class="input-wrapper">
-  <div class="input-content">
-    <div class="icon">
-      <ng-content></ng-content>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="input-wrapper">
+      <div class="input-content">
+        <div class="icon">
+          <ng-content></ng-content>
+        </div>
+        <input
+          [type]="type"
+          [placeholder]="placeholder"
+          [value]="value"
+          (input)="onInput($event)"
+        />
+      </div>
     </div>
-    <input
-      [type]="type"
-      [placeholder] = "placeholder"
-      [value]="value"
-      (input)="onInput($event)"
-
-    />
-  </div>
-</div>
-
+  </body>
+</html>

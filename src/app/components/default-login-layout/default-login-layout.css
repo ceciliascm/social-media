@@ -1,12 +1,11 @@
 main {
   width: 100%;
   display: flex;
-  background-color: rgb(134, 139, 253, 0.5);
+  background-color: rgba(134, 139, 253, 50%);
   flex-direction: row;
   align-items: center;
   min-height: 100vh;
   justify-content: center;
-
 
   &:disabled {
     opacity: 0.8;
@@ -30,11 +29,9 @@ main {
     justify-items: center;
 
     img {
-      padding: 10px 30px 10px;
+      padding: 10px 30px;
     }
   }
-
-
 
   * {
     margin: 0;
@@ -42,14 +39,12 @@ main {
     box-sizing: border-box;
   }
 
-
   .forms-section {
     display: grid;
     flex-grow: 0.6;
     padding: 20px 30px 20px 20px;
     justify-items: center;
     gap: 20px;
-
 
     h1 {
       font-size: 28px;
@@ -63,35 +58,30 @@ main {
       gap: 70px;
     }
 
-
     .remember-me-section {
       display: flex;
       flex-flow: row wrap;
       align-items: center;
       gap: 5px;
-
     }
-
 
     h2 {
       font-size: 15px;
-      color: #4E4D4D;
+      color: #4e4d4d;
     }
 
     .social-media-section {
       display: flex;
       flex-flow: row wrap;
       justify-items: center;
-      align-items: center;
+      place-items: center;
       gap: 50px;
     }
-
 
     .button-wrapper {
       display: grid;
       justify-items: center;
       gap: 10px;
-
 
       button {
         letter-spacing: 3px;
@@ -101,14 +91,10 @@ main {
         width: 240px;
         height: 55px;
         border: none;
-        background-color: #1317DD;
+        background-color: #1317dd;
         color: white;
         padding: 5px 15px;
-
       }
-
     }
-
   }
-
 }

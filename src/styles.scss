@@ -1,5 +1,5 @@
-@import url('@angular/material/prebuilt-themes/indigo-pink.css');
-@import url('ngx-toastr/toastr');
+@import url("@angular/material/prebuilt-themes/indigo-pink.css");
+@import url("ngx-toastr/toastr");
 
 /* You can add global styles to this file, and also import other style files */
 
@@ -10,17 +10,9 @@
   --mdc-switch-unselected-track-color: #e0e0e0;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
 * {
   font-family: Poppins, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-

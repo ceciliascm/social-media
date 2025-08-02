@@ -1,26 +1,43 @@
-<app-default-login-layout
-    title="Login"
-    primaryBtnText="LOGIN"
-    (submit) = "submit()"
-    [disablePrimaryBtn]="!loginForm.valid"
->
-  <form [formGroup]="loginForm">
-      <app-primary-input
-        formControlName="email"
-        inputName="email"
-        type="email"
-        placeholder="Email"
-      >
-        <img src="/assets/png/message_icon.png" style="width: 30px;">
-      </app-primary-input>
-      <app-primary-input
-        formControlName="password"
-        inputName="password"
-        type="password"
-        placeholder="Password"
-      >
-        <img src="/assets/png/password_icon.png" style="width: 30px;">
-
-      </app-primary-input>
-  </form>
-</app-default-login-layout>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+  </head>
+  <body>
+    <app-default-login-layout
+      title="Login"
+      primaryBtnText="LOGIN"
+      (submit)="submit()"
+      [disablePrimaryBtn]="!loginForm.valid"
+    >
+      <form [formGroup]="loginForm">
+        <app-primary-input
+          formControlName="email"
+          inputName="email"
+          type="email"
+          placeholder="Email"
+        >
+          <img
+            src="/assets/png/message_icon.png"
+            alt="message icon"
+            style="width: 30px"
+          />
+        </app-primary-input>
+        <app-primary-input
+          formControlName="password"
+          inputName="password"
+          type="password"
+          placeholder="Password"
+        >
+          <img
+            src="/assets/png/password_icon.png"
+            alt="password icon"
+            style="width: 30px"
+          />
+        </app-primary-input>
+      </form>
+    </app-default-login-layout>
+  </body>
+</html>

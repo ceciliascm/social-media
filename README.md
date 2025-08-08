@@ -46,7 +46,7 @@ ng test
 
 ## Running end-to-end tests
 
-For end-to-end (e2e) testing, run:
+For end-to-end testing, run:
 
 ```bash
 ng e2e
